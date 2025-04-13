@@ -1,7 +1,7 @@
 services:
   gpytop:
     restart: always
-    image: ichiharanaruki/fiberdev:latest
+    image: ichiharanaruki/gpytop:latest
     container_name: 'gpytop'
     working_dir: '/home/'
     tty: true
@@ -17,7 +17,6 @@ services:
       - PULSE_SERVER=$PULSE_SERVER
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=all
-
     deploy:
       resources:
         reservations:
