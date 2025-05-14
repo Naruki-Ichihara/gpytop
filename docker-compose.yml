@@ -1,7 +1,7 @@
 services:
   gpytop:
     restart: always
-    image: ichiharanaruki/gpytop:latest
+    image: nvcr.io/nvidia/jax:25.04-py3
     container_name: 'gpytop'
     working_dir: '/home/'
     tty: true
